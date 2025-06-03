@@ -510,42 +510,56 @@
             <div class="text-container">
               <h2>Contact Us For A Quote</h2>
 
-              <form>
+              <form
+                action="https://formsubmit.co/umimaher786@gmail.com"
+                method="POST"
+              >
+                <input type="hidden" name="_honey" style="display: none" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Message from Contact Form"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://amina-sigma.vercel.app/thank-you.html"
+                />
+
                 <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Enter name"
+                    id="name"
+                    name="name"
+                    required
                   />
                 </div>
                 <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
                   <input
                     type="email"
                     class="form-control"
-                    placeholder="Enter email"
+                    id="email"
+                    name="email"
+                    required
                   />
                 </div>
                 <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter phone"
-                  />
-                </div>
-                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
                   <textarea
                     class="form-control"
-                    placeholder="Enter message"
-                    rows="8"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
                   ></textarea>
                 </div>
-                <div class="d-grid gap-2">
-                  <input
-                    type="submit"
-                    value="Send"
-                    class="btn btn-primary btn-block"
-                  />
-                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
