@@ -513,33 +513,26 @@
                 action="https://formsubmit.co/umimaher786@gmail.com"
                 method="POST"
               >
-                <!-- Anti-bot -->
+                <!-- Hidden Fields -->
                 <input type="hidden" name="_honey" style="display: none" />
-
-                <!-- Disable CAPTCHA -->
                 <input type="hidden" name="_captcha" value="false" />
-
-                <!-- Subject of the email -->
                 <input
                   type="hidden"
                   name="_subject"
                   value="New Message from Contact Form"
                 />
-
-                <!-- Redirect after form submit -->
                 <input
                   type="hidden"
                   name="_next"
                   value="https://amina-sigma.vercel.app/thank-you.html"
                 />
-
-                <!-- Auto-response to user -->
                 <input
                   type="hidden"
                   name="_autoresponse"
                   value="Thank you for contacting us. We will get back to you soon!"
                 />
 
+                <!-- Name Field -->
                 <div class="mb-3">
                   <label for="name" class="form-label">Your Name</label>
                   <input
@@ -551,6 +544,7 @@
                   />
                 </div>
 
+                <!-- Email Field (must be name="email") -->
                 <div class="mb-3">
                   <label for="email" class="form-label">Your Email</label>
                   <input
@@ -562,6 +556,7 @@
                   />
                 </div>
 
+                <!-- Message -->
                 <div class="mb-3">
                   <label for="message" class="form-label">Your Message</label>
                   <textarea
@@ -573,6 +568,7 @@
                   ></textarea>
                 </div>
 
+                <!-- Submit Button -->
                 <button type="submit" class="btn btn-primary w-100">
                   Send Message
                 </button>
